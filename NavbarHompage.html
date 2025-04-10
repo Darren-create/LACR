@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaCntonResort</title>
+    <link rel="icon" href="KaicenatLOGO.jpeg" type="image/png">
+    <link rel="stylesheet" href="Homepage.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">AMENITIES</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ROOM RATE</a></li>
+            <li><a href="#">RESERVATION</a></li>
+            <li><a href="AboutResort.html">ABOUT US</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" style="font-family: Qwitcher, Grypen; font-size: 25px;">LaCntonResort</a></li>
+            <li class="hideOnMobile"><a href="AboutResort.html">ABOUT US</a></li>
+            <li class="hideOnMobile"><a href="#">AMENITIES</a></li>
+            <li class="hideOnMobile"><a href="#">HOME</a></li>
+            <li class="hideOnMobile"><a href="">ROOM RATE</a></li>
+            <li class="hideOnMobile"><a href="">RESERVATION</a></li>
+            <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+            <h1>WELCOME TO</h1>
+            <h2>LaCnton<span>Resort</span></h2>
+            <p>LUXURY HOTELS AND SPA</p>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+</header>   
+</body>
+</html>
